@@ -15,9 +15,6 @@ services:
       KC_DB_PASSWORD: keycloak
     networks:
       - app-network
-    depends_on:
-      db:
-        condition: service_healthy
 
 networks:
   app-network:
